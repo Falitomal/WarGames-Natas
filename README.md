@@ -36,3 +36,18 @@ http://natas3.natas.labs.overthewire.org/
 User and password: natas3
 Password : G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
 
+This have a comment about "No more information leaks!! Not even Google will find it this time…" 
+Esto puede indicar que ha puesto una regla para que los robots de google no escaneen, por lo tanto miramos el archivo ubicado en Robots.txt, ya usando guia de comandos seria :
+
+curl -u natas3:G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q  http://natas3.natas.labs.overthewire.org/robots.txt
+
+Y muestra una carpeta llamada s3cr3t asi que :
+
+curl -u natas3:G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q  http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
+
+## Level 4:
+
+http://natas4.natas.labs.overthewire.org/
+User and password: natas4
+Password : tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
