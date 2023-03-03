@@ -57,7 +57,26 @@ curl -u natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm http://natas4.natas.labs.overthe
 Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"
 
 Using a curl mode, is -e for reference url, this is a solution:
-xcurl -u natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm http://natas4.natas.labs.overthewire.org/ -e 'http://natas5.natas.labs.overthewire.org/'
+curl -u natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm http://natas4.natas.labs.overthewire.org/ -e 'http://natas5.natas.labs.overthewire.org/'
 
 
 Access granted. The password for natas5 is Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
+
+## Level 5:
+
+http://natas5.natas.labs.overthewire.org/
+User and password: natas5
+Password : Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
+Command :
+curl -u natas5:Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD http://natas5.natas.labs.overthewire.org/
+
+El mensaje dice que no estas logeado asi que, hay que ir a la opcion de desarrollo de chrome, ir a Aplication Cookies, buscamos la cookie loggedin y le ponemos a 1, refrescamos y obtenemos la clave:
+
+Access granted. The password for natas6 is fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
+
+
+## Level 6:
+
+http://natas6.natas.labs.overthewire.org/
+User and password: natas6
+Password : fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
