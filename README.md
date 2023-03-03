@@ -80,3 +80,27 @@ Access granted. The password for natas6 is fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 http://natas6.natas.labs.overthewire.org/
 User and password: natas6
 Password : fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
+Command: 
+curl -u natas6:fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR http://natas6.natas.labs.overthewire.org/
+
+Al mostrar la web sale un link "index-source.html" en el cual se examina y puedes obtener info la cual utiliza un metodo GET enlazado a un archivo en la ruta /include/secret.inc el cual examinamos y obtenemos:
+
+<?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?>
+Con esa key vuelves a la pagina original, se pone en el imput secret y obtenemos la key correcta:
+"Access granted. The password for natas7 is jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr"
+
+
+## Level 7:
+
+http://natas7.natas.labs.overthewire.org/
+User and password: natas7
+Password : jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr
+Command: 
+curl -u natas7:jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr http://natas7.natas.labs.overthewire.org/
+
+Al introducirnos por consola obtenemos que la password para el user esta en :
+"<!-- hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->"
+
+Using /../../ can try
